@@ -13,7 +13,7 @@ function USCalculator() {
   const [loading, setLoading] = useState(false);
 
   const fetchCPIForPeriod = async (startYear, endYear) => {
-    const url = "https://api.bls.gov/publicAPI/v2/timeseries/data/"; // Relative URL for proxy
+    const url = "publicAPI/v2/timeseries/data/"; // Relative URL for proxy
     const seriesId = "CUSR0000SA0";
     const payload = {
       seriesid: [seriesId],
